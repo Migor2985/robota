@@ -1,0 +1,83 @@
+/*Общие стили для всех устройств*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #8e2de2, #4a00e0);
+    color: #6f6262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Карточка вакансий, масштабируемая*/
+.vacancy-card {
+    background-color: rgba(225, 235, 234, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    /*Уменьшаем отступы для адаптации*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    /*Занимает 90% ширины экрана*/
+    max-width: 600px;
+    /*Максимальная ширина 600px*/
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    /*Уменьшаем размер шрифта заголовка*/
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.company-info {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.vacancy-info {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.vacancy-info h3 {
+    color: #555;
+    font-size: 1.2em;
+}
+
+.vacancy-info p {
+    line-height: 1.4;
+    /*Уменьшаем межстрочный интервал*/
+    color: #5a5252;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/*Медиа-запросы для адаптации под разные экраны*/
+@media (max-width: 480px) {
+    .vacancy-card {
+        padding: 15px;
+        /*Еще уменьшаем отступы на маленьких экранах*/
+    }
+
+    h2 {
+        font-size: 1.5em;
+        /*Размер заголовка еще меньше*/
+    }
+}
